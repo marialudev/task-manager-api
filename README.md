@@ -1,4 +1,4 @@
-Descrição do Projeto
+Descrição do Projeto:
 A Task Manager API é uma aplicação backend que permite gerenciar tarefas. Com essa API, os usuários poderão adicionar, visualizar, atualizar e deletar suas tarefas, facilitando a organização do dia a dia. O foco deste projeto é desenvolver uma solução eficiente para o gerenciamento de tarefas, seguindo princípios de boas práticas de desenvolvimento de software.
 
 Tecnologias Utilizadas:
