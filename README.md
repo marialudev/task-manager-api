@@ -12,12 +12,11 @@ Funcionalidades:
 - Exibição da última data de acesso: O app exibe a data e hora da última vez que o usuário acessou o aplicativo.
 
 Tecnologias Utilizadas:
-Frontend:
 
-Flutter: Framework para criação da interface do usuário multiplataforma.
-Dart: Linguagem de programação utilizada para o desenvolvimento do aplicativo.
+Frontend:
+- Flutter: Framework para criação da interface do usuário multiplataforma.
+- Dart: Linguagem de programação utilizada para o desenvolvimento do aplicativo.
 
 Banco de Dados:
-
-Sqflite: Biblioteca utilizada para manipulação de banco de dados SQLite no Flutter.
-API: API de horário: Uma API externa é usada para obter e exibir a data e hora em que o usuário acessa o app.
+- Sqflite: Biblioteca utilizada para manipulação de banco de dados SQLite no Flutter.
+- API: API de horário: Uma API externa é usada para obter e exibir a data e hora em que o usuário acessa o app.
