@@ -1,19 +1,28 @@
+name: Flutter CI
+
 on:
   push:
+    branches:
+      - main
+  pull_request:
     branches:
       - main
 
 jobs:
   build:
     runs-on: ubuntu-latest
+
     steps:
       - name: Checkout repository
         uses: actions/checkout@v2
-      - name: Set up Node.js
-        uses: actions/setup-node@v2
+
+      - name: Set up Flutter
+        uses: subosito/flutter-action@v2
         with:
-          node-version: '14'
+          flutter-version: '>=3.0.0-339.0.dev <4.0.0' 
+
       - name: Install dependencies
-        run: npm install
+        run: flutter pub get
+
       - name: Run tests
-        run: npm test
+        run: flutter test

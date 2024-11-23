@@ -39,24 +39,19 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      # Passo 1: Check-out do código
       - name: Checkout code
         uses: actions/checkout@v3
 
-      # Passo 2: Configuração do Flutter
       - name: Set up Flutter
         uses: subosito/flutter-action@v2
         with:
-          flutter-version: 'stable'  # Ou a versão que você preferir
+          flutter-version: 'stable'  
 
-      # Passo 3: Instalar dependências
       - name: Install dependencies
         run: flutter pub get
 
-      # Passo 4: Rodar os testes
       - name: Run tests
         run: flutter test
 
-        # Passo 5: Construir o APK (Versão Release)
       - name: Build APK
         run: flutter build apk --release
