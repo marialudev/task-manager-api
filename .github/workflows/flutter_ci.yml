@@ -16,10 +16,11 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v2
 
-      - name: Set up Flutter
-        uses: subosito/flutter-action@v2
-        with:
-          flutter-version: 'stable' 
+      - name: Install Flutter
+        run: |
+          git clone https://github.com/flutter/flutter.git
+          export PATH="$PATH:pwd/flutter/bin"
+          flutter --version
 
       - name: Install dependencies
         run: flutter pub get
